@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:stretchColumns="1">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:padding="2dp"
+                android:text="Title" />
+
+            <TextView
+                android:id="@+id/book_title"
+                android:padding="2dp"
+                android:text="" />
+
+        </TableRow>
+
+        <View
+            android:layout_height="2dp"
+            android:background="#FF909090" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:padding="2dp"
+                android:text="Author" />
+
+            <TextView
+                android:id="@+id/book_author"
+                android:padding="2dp"
+                android:text="" />
+
+        </TableRow>
+
+        <View
+            android:layout_height="2dp"
+            android:background="#FF909090" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:padding="2dp"
+                android:text="ISBN" />
+
+            <TextView
+                android:id="@+id/book_isbn"
+                android:padding="2dp"
+                android:text="" />
+
+        </TableRow>
+
+        <View
+            android:layout_height="2dp"
+            android:background="#FF909090" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:padding="2dp"
+                android:text="Year" />
+
+            <TextView
+                android:id="@+id/book_year"
+                android:padding="2dp"
+                android:text="" />
+
+        </TableRow>
+
+        <View
+            android:layout_height="2dp"
+            android:background="#FF909090" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:padding="2dp"
+                android:text="Price" />
+
+            <TextView
+                android:id="@+id/book_price"
+                android:padding="2dp"
+                android:text="" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btn_add_to_cart"
+        android:text="@string/add_to_cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
